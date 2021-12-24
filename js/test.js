@@ -199,3 +199,15 @@
 
 /*----------REPETA PRIMER--------------*/
 
+const titleBooks = [
+  'Garri Poter', 'Vlastelin Kolec', 'Voina i Mir', 'Prestuplenie i nakazanie'
+];
+const container = document.querySelector('ul');
+
+ function renderMarkup (boooks) {
+  const boolCont = boooks.map(book => {
+    return`<li>${book}</li>` 
+  }).join('');
+  container.innerHTML = boolCont; 
+}
+renderMarkup(titleBooks);
