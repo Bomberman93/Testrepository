@@ -199,15 +199,26 @@
 
 /*----------REPETA PRIMER--------------*/
 
-const titleBooks = [
-  'Garri Poter', 'Vlastelin Kolec', 'Voina i Mir', 'Prestuplenie i nakazanie'
-];
-const container = document.querySelector('ul');
+// const titleBooks = JSON.parse(localStorage.getItem("titleBooks" || "[]"));
+// const refs = {
+//   button: document.querySelector("button"),
+//   input: document.querySelector("input"),
+//   container: document.querySelector('ul'),
+// };
 
- function renderMarkup (boooks) {
-  const boolCont = boooks.map(book => {
-    return`<li>${book}</li>` 
-  }).join('');
-  container.innerHTML = boolCont; 
-}
-renderMarkup(titleBooks);
+//  function renderMarkup (boooks) {
+//   const boolCont = boooks.map(book => {
+//     return`<li>${book}</li>` 
+//   }).join('');
+//   container.innerHTML = boolCont; 
+// };
+// renderMarkup(titleBooks);
+
+// function addBook(e) {
+//   if(refs.input.value);
+//   titleBooks.push(refs.input.value);
+//   localStorage.setItem("titleBooks", JSON.stringify(titleBooks));
+//   renderMarkup(titleBooks);
+//   refs.input.value = "";
+// }
+// refs.button.addEventListener("click", addBook);
